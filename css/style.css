@@ -336,6 +336,51 @@ footer {
   max-height: 400px;
 }
 
+#accordion2 {
+  width: 100%;
+}
+
+#accordion2 li{
+  list-style: none;
+  width: 90%;
+  margin-bottom: 10px;
+  background: #dcedf7;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#accordion2 li label {
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(43, 88, 136);
+}
+
+#accordion2 li label span {
+  transform: rotate(90deg);
+  font-size: 18px;
+}
+
+#accordion2 label + input[type="radio"]{
+  display: none;
+}
+
+#accordion2 .content{
+  padding: 0 10px;
+  line-height:26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+#accordion2 label + input[type="radio"]:checked + .content{
+  max-height: 400px;
+}
+
 .image-container img{
   display: inline-block;
   width: 200px;
